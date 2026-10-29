@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deekshith Devadiga | Portfolio & CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <header class="navbar no-print">
+    <div class="nav-container">
+      <div class="brand">
+        <span class="brand-avatar">DD</span>
+        <div class="brand-text">
+          <span class="brand-name">Deekshith</span>
+          <span class="brand-status"><span class="status-dot"></span> Available for Hire</span>
+        </div>
+      </div>
+      
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="themeToggle" class="btn-icon" title="Toggle Light / Dark Mode" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon" id="themeIcon"></i>
+        </button>
+
+        <button onclick="window.print()" class="btn btn-primary btn-sm">
+          <i class="fa-solid fa-file-arrow-down"></i> Print / Save CV
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="page-container">
+    
+    <!-- Top Hero Banner Card -->
+    <section class="hero-card">
+      <div class="hero-left">
+        <span class="badge-role">MCA Student &bull; Aspiring Software Developer</span>
+        <h1 class="hero-name">Deekshith Devadiga</h1>
+        <p class="hero-bio">
+          Building responsive web apps and practical Android solutions with clean code. Passionate about software architecture, database management, and emerging cloud technologies.
+        </p>
+
+        <!-- Quick Contact Tags -->
+        <div class="contact-pills">
+          <button class="pill" onclick="copyText('deekshithdevadiga03@gmail.com', 'Email copied!')" title="Click to copy email">
+            <i class="fa-solid fa-envelope"></i> deekshithdevadiga03@gmail.com
+            <span class="copy-hint"><i class="fa-regular fa-copy"></i></span>
+          </button>
+          <button class="pill" onclick="copyText('8431040668', 'Phone copied!')" title="Click to copy phone number">
+            <i class="fa-solid fa-phone"></i> +91 84310 40668
+            <span class="copy-hint"><i class="fa-regular fa-copy"></i></span>
+          </button>
+          <span class="pill pill-static">
+            <i class="fa-solid fa-location-dot"></i> Udupi, Karnataka, India
+          </span>
+          <span class="pill pill-static">
+            <i class="fa-brands fa-linkedin"></i> Deekshith Devadiga
+          </span>
+        </div>
+      </div>
+
+      <!-- Quick Metrics Counter (Medium Unique Bento Style) -->
+      <div class="hero-right">
+        <div class="metric-card">
+          <span class="metric-num">MCA</span>
+          <span class="metric-label">Poornaprajna Inst.</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-num">2+</span>
+          <span class="metric-label">Key Projects Built</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-num">NPTEL</span>
+          <span class="metric-label">Cloud Certified</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-num">3</span>
+          <span class="metric-label">Languages Known</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Two-Column Balanced Content Grid -->
+    <div class="content-layout">
+
+      <!-- Left / Main Column: Projects & Experience -->
+      <div class="main-column">
+        
+        <!-- Featured Projects Section -->
+        <section class="card-section">
+          <div class="card-section-header">
+            <div class="header-icon icon-indigo"><i class="fa-solid fa-layer-group"></i></div>
+            <div>
+              <h2 class="card-section-title">Featured Projects</h2>
+              <p class="card-section-subtitle">Real-world applications built from scratch</p>
+            </div>
+          </div>
+
+          <div class="projects-list">
+            <!-- Project 1 -->
+            <article class="project-item">
+              <div class="project-header">
+                <div>
+                  <div class="project-tag-row">
+                    <span class="tag-category">Web Application</span>
+                  </div>
+                  <h3 class="project-title">Campus Bites</h3>
+                  <p class="project-role">College Canteen Food Ordering Website</p>
+                </div>
+                <div class="tech-stack-pills">
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                  <span>JavaScript</span>
+                </div>
+              </div>
+              <p class="project-desc">
+                Developed a full web-based food ordering system for the college canteen to streamline meal rushes and cut queue times.
+              </p>
+              <ul class="feature-bullets">
+                <li>Designed an intuitive, responsive user interface to browse food items and view real-time menu details.</li>
+                <li>Implemented client-side ordering interactions with live price estimation and cart review.</li>
+                <li>Ensured smooth, fast mobile browsing for students on campus devices.</li>
+              </ul>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-item">
+              <div class="project-header">
+                <div>
+                  <div class="project-tag-row">
+                    <span class="tag-category tag-emerald">Android App</span>
+                  </div>
+                  <h3 class="project-title">RESQLINE</h3>
+                  <p class="project-role">Emergency Ambulance Booking Application</p>
+                </div>
+                <div class="tech-stack-pills">
+                  <span>Android SDK</span>
+                  <span>Java</span>
+                  <span>Firebase</span>
+                </div>
+              </div>
+              <p class="project-desc">
+                Engineered an Android mobile application created to assist users in urgently booking ambulance transit during emergencies.
+              </p>
+              <ul class="feature-bullets">
+                <li>Built a simplified, high-clarity interface intended for quick navigation during high-stress situations.</li>
+                <li>Integrated Firebase for real-time request storage, tracking, and fast data synchronization.</li>
+                <li>Focused on reliability and fast load times on various Android device models.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="card-section">
+          <div class="card-section-header">
+            <div class="header-icon icon-blue"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div>
+              <h2 class="card-section-title">Education</h2>
+              <p class="card-section-subtitle">Academic degrees and training</p>
+            </div>
+          </div>
+
+          <div class="timeline-box">
+            <div class="timeline-entry">
+              <div class="timeline-dot"></div>
+              <div class="entry-header">
+                <h3 class="entry-title">Master of Computer Applications (MCA)</h3>
+                <span class="entry-date">11/2026 – Present</span>
+              </div>
+              <p class="entry-institution">Poornaprajna Institute of Management</p>
+              <p class="entry-location"><i class="fa-solid fa-location-dot"></i> Udupi, Karnataka, India</p>
+              <p class="entry-detail">
+                Focused on core computer science subjects, modern object-oriented software engineering, relational database design, and web/mobile application architectures.
+              </p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- Right Column: Skills, Summary & Certs -->
+      <aside class="sidebar-column">
+
+        <!-- Summary Card -->
+        <section class="card-section">
+          <div class="card-section-header">
+            <div class="header-icon icon-purple"><i class="fa-solid fa-sparkles"></i></div>
+            <div>
+              <h2 class="card-section-title">Profile</h2>
+            </div>
+          </div>
+          <p class="summary-body">
+            Motivated MCA student with a strong command of HTML, CSS, JavaScript, and Android development. Passionate about building functional apps that solve daily human problems, and eager to apply programming skills in an industry software team.
+          </p>
+        </section>
+
+        <!-- Technical Skills Card -->
+        <section class="card-section">
+          <div class="card-section-header">
+            <div class="header-icon icon-teal"><i class="fa-solid fa-laptop-code"></i></div>
+            <div>
+              <h2 class="card-section-title">Skills &amp; Tools</h2>
+            </div>
+          </div>
+
+          <div class="skills-block">
+            <div class="skill-group">
+              <span class="group-title">Languages</span>
+              <div class="skill-chips">
+                <span class="chip"><i class="fa-brands fa-java"></i> Java</span>
+                <span class="chip"><i class="fa-brands fa-python"></i> Python</span>
+                <span class="chip">C</span>
+                <span class="chip">C++</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <span class="group-title">Web &amp; Mobile</span>
+              <div class="skill-chips">
+                <span class="chip"><i class="fa-brands fa-html5"></i> HTML5</span>
+                <span class="chip"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                <span class="chip"><i class="fa-brands fa-js"></i> JavaScript</span>
+                <span class="chip"><i class="fa-brands fa-android"></i> Android</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <span class="group-title">Databases &amp; Cloud</span>
+              <div class="skill-chips">
+                <span class="chip"><i class="fa-solid fa-database"></i> SQL</span>
+                <span class="chip">MySQL</span>
+                <span class="chip"><i class="fa-solid fa-fire"></i> Firebase</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Certification Card -->
+        <section class="card-section">
+          <div class="card-section-header">
+            <div class="header-icon icon-amber"><i class="fa-solid fa-award"></i></div>
+            <div>
+              <h2 class="card-section-title">Certifications</h2>
+            </div>
+          </div>
+          <div class="cert-card">
+            <h4 class="cert-name">Cloud Computing</h4>
+            <p class="cert-authority">NPTEL</p>
+            <span class="cert-sub">National Programme on Technology Enhanced Learning</span>
+          </div>
+        </section>
+
+        <!-- Spoken Languages Card -->
+        <section class="card-section">
+          <div class="card-section-header">
+            <div class="header-icon icon-rose"><i class="fa-solid fa-language"></i></div>
+            <div>
+              <h2 class="card-section-title">Languages</h2>
+            </div>
+          </div>
+          <div class="lang-grid">
+            <div class="lang-row">
+              <span class="lang-name">English</span>
+              <span class="lang-bar-container"><span class="lang-bar" style="width: 90%;"></span></span>
+            </div>
+            <div class="lang-row">
+              <span class="lang-name">Kannada</span>
+              <span class="lang-bar-container"><span class="lang-bar" style="width: 100%;"></span></span>
+            </div>
+            <div class="lang-row">
+              <span class="lang-name">Hindi</span>
+              <span class="lang-bar-container"><span class="lang-bar" style="width: 75%;"></span></span>
+            </div>
+          </div>
+        </section>
+
+      </aside>
+    </div>
+
+    <!-- Contact & Call to Action Footer -->
+    <footer class="footer-cta no-print">
+      <div class="cta-inner">
+        <h3>Ready to start a conversation?</h3>
+        <p>I am looking for software developer internships and entry-level engineering roles.</p>
+        <div class="cta-buttons">
+          <a href="mailto:deekshithdevadiga03@gmail.com" class="btn btn-primary">
+            <i class="fa-solid fa-paper-plane"></i> Send Email
+          </a>
+          <a href="tel:8431040668" class="btn btn-secondary">
+            <i class="fa-solid fa-phone"></i> Call +91 84310 40668
+          </a>
+        </div>
+      </div>
+      <p class="copyright">&copy; <span id="year"></span> Deekshith Devadiga &bull; Built with clean, modern web standards.</p>
+    </footer>
+
+  </main>
+
+  <!-- Notification Toast for Copying -->
+  <div id="toast" class="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
